@@ -1,0 +1,521 @@
+body {
+	background-color: rgb(245, 245, 245);
+}
+.container-fluid {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	background-color: rgb(245, 245, 245);
+	color: black;
+}
+.icons .img {
+	width: 40px;
+	height: 40px;
+	background-color: white;
+	border-radius: 1000px;
+	padding: 5px;
+	margin: 2px;
+	position: relative;
+	z-index: 1;
+	transition: all 1s;
+	box-shadow: 0.1em 0.1em 0.2em 0.05em rgb(0, 0, 0, 0.85);
+}
+a {
+	text-decoration: none;
+}
+.h1, .h2, .h3 {
+	font-family: 'Sarpanch', sans-serif;
+	text-transform: uppercase;
+}
+.subrayado {
+	border-bottom: solid 3px rgb(168, 16, 16);
+}
+.boton {
+	font-size: 18px;
+	background-color: white;
+	border: solid 1px white;
+	border-radius: 5px;
+	padding: 5px 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: black;
+	transition: all 0.5s;
+}
+ .boton:hover {
+	background-color: rgb(168, 16, 16);
+	color: white;
+	transition: all 0.5s;
+}
+
+
+/*HEADER*/
+.header {
+	width: 100%;
+	position: fixed;
+	height: 60px;
+	transition: all 0.5s;
+	z-index: 90;
+}
+.showBG {
+	box-shadow: 0.1em 0.1em 0.3em 0.1em rgb(0, 0, 0, 0.4);
+	background-color: black;
+}
+.header .logo {
+	padding-left: 55px;
+}
+.header .logo .img-logo {
+	width: 40px;
+	filter: invert(1);
+}
+.header .navbar {
+	background-color: transparent;
+	height: 50px;
+}
+.header .nav-item {
+	padding-right: 10px;
+}
+.header .nav-link {
+	font-family: 'Sarpanch', sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: white;
+}
+.header .nav-link:hover {
+	color: rgb(245, 24, 24);
+	transition: all 0.5s;
+}
+.ocultarMenu {
+	transform: scaleY(0);
+	transform-origin: top;
+	transition: all 0.2s;
+}
+.header .rrss {
+	display: flex;
+	justify-content: end;
+	border-left: solid 2px white;
+}
+.header .rrss .icons {
+	transform: scale(0.75);
+}
+
+/*INICIO*/
+.inicio {
+ 	background-image: url('../assets/img-prog-123R.jpg');
+	background-size: cover;
+	height: 600px;
+	padding: 80px 25px;
+}
+.inicio .h1 {
+	height: 60%;
+	font-size: 60px;
+	font-weight: 900;
+	letter-spacing: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	color: white;
+	text-shadow: 0.1em 0.1em 0.2em black;
+}
+.inicio .h2 {
+	font-size: 25px;
+	font-weight: bold;
+	letter-spacing: 10px;
+	color: white;
+	text-shadow: 0.1em 0.1em 0.2em black;
+	opacity: 0;
+}
+.inicio .h3 {
+	font-size: 20px;
+	color: white;
+	opacity: 0;
+	height: 0;
+	padding-top: 15px;
+}
+
+
+/*SECCION*/
+.seccion {
+	padding: 80px;
+}
+.seccion .h1 {
+	font-size: 30px;
+	font-weight: bold;
+}
+.seccion .h1 {
+	padding-bottom: 25px;
+}
+
+
+/*PROYECTOS*/
+.proyectos {
+	background-color: white;
+}
+/*Gallery Bootstrap*/
+.proyectos .article {
+	background-color: white;
+	padding: 8px;
+	border: solid 1px rgb(228, 228, 228);
+}
+.proyectos .article:hover {
+	cursor: pointer;
+	border: solid 1px rgb(168, 16, 16);
+
+}
+.proyectos .imagen {
+	background-color: rgb(228, 228, 228);
+	border-radius: 3px;
+	height: 300px;
+	overflow: hidden;
+}
+.proyectos .imagen .img {
+	height: 100%;
+	object-fit: scale-down;
+	border: solid 1px rgb(200, 200, 200);
+}
+.proyectos .info {
+	height: 90px;
+}
+.proyectos .h2 {
+	font-size: 16px;
+	color: black;
+}
+.proyectos .p2 {
+	color: rgb(60, 60, 60);
+	font-size: 12px;
+}
+
+
+/*CENTRAL*/
+.central {
+	background-image: url("../assets/img-prog-113R.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center top;
+	background-size: cover;
+	color: white;
+	padding: 0;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	position: relative;
+	z-index: 1;
+}
+.central .autor {
+	font-size: 18px;
+}
+.central .autor::before,
+.central .autor::after {
+	content: " -- "
+}
+.central .p {
+	background-color: rgb(255, 255, 255, 0.45);
+	padding: 20px;
+	color: black;
+	font-weight: 600;
+}
+.central .arrowPhrase {
+	font-family: "FontAwesome";
+	line-height: 40px;
+	color: white;
+	margin-top: 15px;
+	transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+}
+.central #prevPhrase::after {
+	content: "\f104";
+	font-size: 45px;
+}
+.central #nextPhrase::after {
+	content: "\f105";
+	font-size: 45px;
+}
+.central .arrowPhrase:hover {
+	cursor: pointer;
+}
+
+
+/*FORM_EXP*/
+.form_exp {
+	border-bottom: 1px solid rgb(228, 228, 228)
+}
+.form_exp .globo {
+	border-radius: 20px;
+	background-color: rgb(168, 16, 16, 0.1);
+	padding: 30px;
+}
+.form_exp .group {
+	margin-top: 25px;
+}
+.form_exp .title {
+	font-size: 16px;
+	font-weight: bolder;
+	margin-bottom: 0px;
+	color: rgb(60, 60, 60);
+} 
+.form_exp .subtitle {
+	font-weight: bold;
+	color: rgb(115, 115, 115);
+}
+.form_exp .title-list {
+	margin: 0px;
+}
+
+/*ABOUT*/
+.about .my-grid .imagen .img {
+	box-shadow: 0.2em 0.2em 0.3em 0.1em rgb(0, 0, 0, 0.85);
+	border: solid 2px white;
+}
+.about .my-grid .imagen {
+	position: relative;
+	max-width: 250px;
+}
+.about .my-grid .imagen .img:first-child {
+	transform: rotateZ(6deg);
+	z-index: 0;
+}
+.about .my-grid .imagen .img:last-child {
+	position: absolute;
+	right: 0;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	cursor: pointer;
+	z-index: 1;
+	transition: all 1s;
+}
+.about .ocultar-img {
+	transition: all 1s;
+	opacity: 0;
+	visibility: hidden
+}
+.about .text,
+.about .skills {
+	padding-left: 55px;
+}
+
+/*SKILLS PopUp*/
+.about .icons {
+	cursor: pointer;
+	position: relative;
+	display: inline-block;
+	padding-top: 4px;
+}
+.about .ampliar-img-popup {
+	transform: scale(5);
+	transition: all 0.5s;
+}
+.about .ocultar-popup {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border-radius: 1000px;
+	transform: translate(-50%, -50%);
+	z-index: -1;
+	opacity: 0;
+	transition: opacity 1s;
+}
+.about .mostrar-popup {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border-radius: 1000px;
+	transform: translate(-50%, -50%);
+	background-color: rgba(255, 255, 255, 0.65);
+	opacity: 1;
+	z-index: 25;
+	transition: opacity 0.5s;
+	transition-delay: 0.5s;
+	width: 200px;
+	height: 200px;
+}
+.about .popup {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 25px;
+}
+.about .popup h2 {
+	font-size: 24px;
+	font-weight: 600;
+}
+.about .popup p {
+	font-size: 13px;
+	text-align: center;
+}
+
+
+/*CONTACT*/
+.contacto {
+	background: rgb(168, 16, 16);
+	color: white;
+	background-image: url('../assets/img-prog-121.jpg');
+	background-size: cover;
+}
+
+/*Formulario*/
+.contacto .form .mensaje {
+	min-height: 100px;
+}
+.contacto .ico-label,
+.contacto .form-control {
+	background-color: white;
+	height: 35px;
+	border: solid 1px rgb(228, 228, 228);
+	border-radius: 0;
+	font-size: 13px;
+	height: 35px;
+}
+.contacto .ico-label .img {
+	height: 100%;
+	object-fit: scale-down;
+}
+.contacto .form-control:focus {
+	box-shadow: none;
+}
+.contacto .form .boton {
+	font-size: 13px;
+}
+.contacto .check {
+	font-size: 13px;
+}
+.contacto .email {
+	color: white;
+}
+.contacto .email:hover {
+	color: white;
+}
+.contacto .rrss .icons {
+	display: inline-block;
+}
+.contacto .rrss .icons:hover {
+	animation: bote 0.3s infinite alternate;
+}
+
+
+/*Button GoUp*/
+#goUp {
+	display: inline-block;
+	background-color: rgb(245, 24, 24);
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	border-radius: 1000px;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+	z-index: 80;
+}
+#goUp:hover {
+	cursor: pointer;
+}
+#goUp:active {
+	background-color: rgb(80, 80, 80);
+}
+#goUp::after {
+	font-family: "FontAwesome";
+	content: "\f106";
+	font-size: 1em;
+	line-height: 40px;
+	color: white;
+}
+.showGoUp {
+	transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+	opacity: 0;
+	visibility: hidden;
+}
+
+
+/*FOOTER*/
+.footer {
+	border-top: solid 1px rgb(228, 228, 228);
+}
+.footer .copyright {
+	font-size: 12px;
+}
+
+
+/*ANIMACIONES*/
+@keyframes bote {
+	from {
+		transform: translate3d(0,0,0);
+	}
+	to {
+		transform: translate3d(0,-10px,0);
+	}
+}
+
+/*Efecto cursor máquina de escribir*/
+.blink {
+  animation: blinker 1s linear infinite;
+}
+@keyframes blinker{
+  50%{
+    opacity: 0;
+  }
+}
+
+
+/*MEDIAQUERY*/
+@media screen and (width < 576px) {
+	.inicio .h1 {
+		font-size: 45px;
+		letter-spacing: 5px;
+	}
+	.inicio .h2 {
+		font-size: 20px;
+		letter-spacing: 2px;
+	}
+	.inicio .h3 {
+		font-size: 16px;
+	}
+
+	.about .my-grid .imagen .img {
+		margin-left: 0;
+	}
+	.about .group-pop:hover img {
+		transform: scale(5);
+	}
+
+	.contacto .form {
+		width: 100%;
+	}
+}
+
+@media screen and (width < 768px) {
+	.header .logo {
+		padding-left: 20px;
+	}
+	.header .navbar-toggler {
+		border: none;
+		box-shadow: none;
+	}
+	.header .navbar-toggler i {
+		color: white;
+		font-size: 1.5em;
+		padding-right: 5px;
+	}
+	.header .navbar-nav {
+		background-color: rgb(0, 0, 0, 0.75);
+		margin-top: 10px;
+	}
+	.header .rrss {
+		border-top: solid 1px white;
+		border-left: none;
+	}
+
+	.seccion {
+		padding-right: 40px;
+		padding-left: 40px;
+	}
+
+	.central {
+		padding: 0;
+		padding-top: 45px;
+		padding-bottom: 15px;
+	}
+
+	.about .text,
+	.about .skills {
+		padding-left: 0px;
+	}
+}
